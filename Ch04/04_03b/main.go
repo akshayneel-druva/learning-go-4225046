@@ -13,8 +13,16 @@ func main() {
 	// 	println(colors[i])
 	// }
 
-	// for _, color := range colors {
+	// for i := range colors {
+	// 	println(colors[i])
+	// }
+
+	// for _, color := range colors {  // _ is a blank identifier
 	// 	println(color)
+	// }
+
+	// for test, color := range colors {  // _ is a blank identifier
+	// 	println(test, color)
 	// }
 
 	// states := make(map[string]string)
@@ -25,13 +33,13 @@ func main() {
 	// 	println(states[state])
 	// }
 
-	value := 0
+	// value := 0
 	sum := 0
-	for value < 5 {
+	for value := 0; value < 5; value++ {
 		sum += value
 		fmt.Printf("Value: %v\n", value)
 		fmt.Printf("Sum: %v\n", sum)
-		value++
+		// value++
 	}
 
 	sum = 1
